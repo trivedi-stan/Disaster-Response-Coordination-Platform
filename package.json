@@ -1,0 +1,39 @@
+{
+  "name": "disaster-response-coordination-platform",
+  "version": "1.0.0",
+  "description": "A backend-heavy MERN stack application for disaster response coordination",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js",
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "dev": "node start.js",
+    "build": "cd frontend && npm run build",
+    "test": "npm run test-backend && npm run test-frontend",
+    "test-backend": "cd backend && npm test",
+    "test-frontend": "cd frontend && npm test",
+    "setup": "npm run install-all && echo 'Setup complete! Configure your .env files and run npm start'"
+  },
+  "keywords": [
+    "disaster-response",
+    "emergency-management",
+    "mern-stack",
+    "real-time",
+    "geospatial",
+    "ai-integration"
+  ],
+  "author": "Development Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/disaster-response-platform.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
